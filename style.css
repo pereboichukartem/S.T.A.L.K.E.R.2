@@ -1,0 +1,135 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+  
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #663c02, #1f1201);
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.hero{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://img.goodfon.com/original/1920x1080/d/41/stalker-stalker-2-gsc-game-world-s-t-a-l-k-e-r-2-heart-of-ch.jpg');
+}
+.hero  p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    color: #e0e0e0;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    color: #e0e0e0; 
+    max-width: 600px;
+}
+.cta-button {
+   font-size: 1rem;
+   font-weight: bold;
+   color: #ffffff;
+   text-decoration: none;
+   padding: 15px 35px;
+   border-radius: 50px;
+   background-image: linear-gradient(to right, #d17702, #034c85);
+   box-shadow: 5px 8px 25px rgba(133, 78, 3, 0.4);
+   transition: all 0.3s ease;
+}
+.cta-button:hover{
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 5px 12px 30px rgba(133, 78, 3, 0.6);
+}
+.but{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #24211e;
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+    line-height: 1.1;
+    height: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+main{
+    border-top: 2px solid #4f3402 ;
+    border-bottom: 0 solid #4f3402 ;
+    border-left:  0 solid #4f3402 ;
+    border-right: 0 solid #4f3402 ;
+    padding: 20px;
+    background-color:  #24211e;
+    color: white;
+    text-align: center;
+}
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: space-around;
+}
+.card{
+    background-color: #382501;
+    border: 2px solid #0a0a0a;
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 5px 10px;
+    margin: 10px auto;
+    box-shadow: 0 0 20px 5px rgba(130, 81, 1, 0.6);
+}
+.card p{
+    font-size: 16px;
+    font-weight: normal;
+}
+.card p span{
+    font-weight: bold;
+    display: block;
+}
+.img{
+    border: 2px solid #8f5e03;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(133, 78, 3, 0.4);
+    transition: all 0.3s ease;
+}
+.img:hover{
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 12px 30px rgba(133, 78, 3, 0.6);
+}
+footer{
+    border-top: 2px solid #4f3402 ;
+    border-bottom: 0 solid #4f3402 ;
+    border-left:  0 solid #4f3402 ;
+    border-right: 0 solid #4f3402 ;
+    padding: 20px;
+    background-color:  #141413;
+    color: white;
+}
