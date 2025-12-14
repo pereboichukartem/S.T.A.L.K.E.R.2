@@ -19,6 +19,7 @@ h1{
     color: white;
 }
  h2{
+    text-align: center;
     color: white;
     font-size: 30px;
     padding: 20px 0;
@@ -57,4 +58,7 @@ a:hover {
 footer{
     background-color: #1c1c1b;
     padding: 50px;
+}
+iframe{
+  text-align: center;
 }
