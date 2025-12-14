@@ -50,7 +50,7 @@ header{
    box-shadow: 5px 8px 25px rgba(133, 78, 3, 0.4);
    transition: all 0.3s ease;
 }
-.cta-button:hover{
+.cta-button:active{
     transform: scale(1.05) translateY(-3px);
     box-shadow: 5px 12px 30px rgba(133, 78, 3, 0.6);
 }
