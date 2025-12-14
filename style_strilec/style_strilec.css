@@ -29,16 +29,21 @@ p{
     font-size: 18px;
 }
 header{
-    background-color: #262525;
-    margin-right:  150px;
-    margin-left: 150px;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #663c02, #1f1201);
+    justify-content: space-between;
+    padding: 5px 20px;
 }
-nav{
-    background-color: #2e2d2b;
-    margin-right: 150px;
-    margin-left: 150px;
-    padding: 20px;
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
 }
 main{
     background-color: #1f1e1e;
@@ -60,5 +65,7 @@ footer{
     padding: 50px;
 }
 iframe{
-  text-align: center;
+    text-align: center;
+    display: flex;
+    justify-self: center;
 }
