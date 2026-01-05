@@ -112,7 +112,7 @@ main{
     transform-style: preserve-3d;
     transition: transform 0.8s ease;
 }
-.card:focus {
+.card:input[type="checkbox"]:checked + label {
   transform: rotateY(180deg); /* переворот при наведенні */
 }
 .card p{
