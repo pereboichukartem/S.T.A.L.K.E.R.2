@@ -112,7 +112,7 @@ main{
     transform-style: preserve-3d;
     transition: transform 0.8s ease;
 }
-.card:hover {
+.card:active {
   transform: rotateY(180deg); /* переворот при наведенні */
 }
 .card p{
