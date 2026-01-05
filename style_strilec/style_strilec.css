@@ -71,11 +71,15 @@ a:hover {
     color: #dec285;
 }
 .section{
-  margin: 15px 200px;
+  margin: 20px 200px;
   border-radius: 20px;
   background-color: #292929;
   border: 1.5px solid black;
   box-shadow: 0 0 20px 5px rgba(20, 20, 20, 0.6);
+  padding: 20px;
+}
+.p_p{
+  height: 800px;
 }
 footer{
     background-color: #1c1c1b;
