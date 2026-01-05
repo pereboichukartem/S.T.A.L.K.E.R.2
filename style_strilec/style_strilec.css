@@ -79,8 +79,10 @@ a:hover {
   box-shadow: 0 0 20px 5px rgba(20, 20, 20, 0.6);
   padding: 20px;
 }
-.p_p{
-  height: 800px;
+.wrap1{
+  display: flex;
+  gap: 10px;
+  
 }
 footer{
     background-color: #1c1c1b;
