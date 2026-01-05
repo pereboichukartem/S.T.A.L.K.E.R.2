@@ -82,7 +82,9 @@ a:hover {
 .wrap1{
   display: flex;
   gap: 10px;
-  
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
 }
 footer{
     background-color: #1c1c1b;
