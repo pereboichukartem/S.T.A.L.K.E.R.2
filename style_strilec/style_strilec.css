@@ -11,6 +11,9 @@ header{
     justify-content: space-between;
     padding: 5px 20px;
 }
+header p2{
+  color: black;
+}
 .logo{
     display: flex;
     justify-content: flex-start;
@@ -38,8 +41,6 @@ h1{
  h2{
     text-align: center;
     color: white;
-    font-size: 30px;
-    padding: 20px 0;
 }
 p{
     color: white;
