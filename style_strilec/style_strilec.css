@@ -4,6 +4,23 @@ body{
   line-height: 1.6; 
   margin: 0;
 }
+header{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #663c02, #1f1201);
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
 .s3{
     float: right;
     padding: 20px;
@@ -28,23 +45,7 @@ p{
     color: white;
     font-size: 18px;
 }
-header{
-    display: flex;
-    flex-direction: row;
-    background-image: linear-gradient(to right, #663c02, #1f1201);
-    justify-content: space-between;
-    padding: 5px 20px;
-}
-.logo{
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-}
-.menu{
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-}
+
 .but{
     padding: 15px;
     text-align: center;
@@ -58,8 +59,6 @@ header{
 }
 main{
     background-color: #1f1e1e;
-    margin-right: 150px;
-    margin-left: 150px;
     padding: 20px;
 }
 a{
@@ -70,7 +69,13 @@ a{
 a:hover {
     color: #dec285;
 }
-
+.section{
+  margin: 15px 200px;
+  border-radius: 20px;
+  background-color: #292929;
+  border: 1.5px solid black;
+  box-shadow: 0 0 20px 5px rgba(20, 20, 20, 0.6);
+}
 footer{
     background-color: #1c1c1b;
     padding: 50px;
