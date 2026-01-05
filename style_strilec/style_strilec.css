@@ -64,6 +64,7 @@ main{
 a{
     color: #b59d00;
     margin: 0 ;
+    text-decoration: none;
 }
 
 a:hover {
