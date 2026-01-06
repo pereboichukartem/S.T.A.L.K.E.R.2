@@ -169,6 +169,10 @@ main{
   box-shadow: 5px 8px 25px rgba(133, 78, 3, 0.4);
   transition: all 0.3s ease;
 }
+.deteils:hover{
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 5px 12px 30px rgba(133, 78, 3, 0.6);
+}
 footer{
     border-top: 2px solid #4f3402 ;
     border-bottom: 0 solid #4f3402 ;
