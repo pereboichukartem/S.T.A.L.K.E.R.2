@@ -1,14 +1,16 @@
 body{
   font-family: sans-serif;
   margin: 0;
-  
+  padding-top: 70px;
 }
 header{
     display: flex;
+    position: fixed;
     flex-direction: row;
     background-image: linear-gradient(to right, #663c02, #1f1201);
     justify-content: space-between;
     padding: 5px 20px;
+    height: 70px;
 }
 
 .hero{
