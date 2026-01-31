@@ -9,7 +9,7 @@ header{
     flex-direction: row;
     background-image: linear-gradient(to right, #663c02, #1f1201);
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px;
     height: 70px;
     top: 0;
     left: 0;
