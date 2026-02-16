@@ -3,13 +3,28 @@ body{
   margin: 0;
 }
 header{
-    background-color: #1E1B18;
     display: flex;
-    justify-content: center;
+    position: fixed;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #663c02, #1f1201);
+    justify-content: space-between;
+    padding: 5px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
-header h1{
+.logo{
+    display: flex;
+    justify-content: flex-start;
     color: #E8E6D8;
-    font-size: 4,8;
+    gap: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
 }
 main{
     background-color: #2E2B27;
@@ -112,4 +127,5 @@ footer{
 }
 .a_footer:hover{
     color: #bfff3f;
+
 }
