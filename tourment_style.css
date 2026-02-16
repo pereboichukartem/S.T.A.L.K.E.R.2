@@ -1,0 +1,115 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+header{
+    background-color: #1E1B18;
+    display: flex;
+    justify-content: center;
+}
+header h1{
+    color: #E8E6D8;
+    font-size: 4,8;
+}
+main{
+    background-color: #2E2B27;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.hero-img{
+    background-color: #6E5532;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow:0 0 20px 5px rgba(154 ,205 ,50);
+    height: 500px;
+}
+img{
+    border-radius: 20px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.register-form {
+    margin: 0;
+    background-color: #6E5532;
+    border-radius: 20px;
+    box-shadow:0 0 20px 5px rgba(154 ,205 ,50);
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block; /* Робить лейбл блоковим, щоб він був над полем */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    background-color: #2E2B27;
+    color: #E8E6D8;
+    font-size: 20;
+}
+
+/* Ефект при кліку в поле */
+input:focus {
+  border-color: #9ACD32;
+  outline: none; /* Прибираємо стандартну синю рамку браузера */
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    padding: 25px;
+    margin-top: 20px;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 45;
+    color: #9ACD32;
+    background-color: #C0A000;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-Color: #9c8201;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1E1B18;
+    padding: 20px;
+}
+.footer_info{
+    color: #E8E6D8;
+    font-size: medium;
+}
+.footer_brands{
+    color: #9ACD32;
+    font-size: medium;
+}
+.a_footer{
+    text-decoration: none;
+    color: #9ACD32;
+}
+.a_footer:hover{
+    color: #bfff3f;
+}
