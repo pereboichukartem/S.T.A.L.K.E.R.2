@@ -27,6 +27,17 @@ header{
     justify-content: flex-end;
     gap: 15px;
 }
+.but{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #24211e;
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+    line-height: 1.1;
+    height: 20px;
+}
 main{
     background-color: #2E2B27;
     padding: 50px;
@@ -130,4 +141,5 @@ footer{
     color: #bfff3f;
 
 }
+
 
