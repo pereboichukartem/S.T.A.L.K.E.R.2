@@ -79,6 +79,7 @@ header{
 
   iframe {
     border-radius: 10px;
+    margin: 10px 0;
   }
 footer{
     display: flex;
@@ -103,3 +104,4 @@ footer{
 
 
 }
+
