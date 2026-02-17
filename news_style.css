@@ -81,6 +81,14 @@ header{
     border-radius: 10px;
     margin: 10px 0;
   }
+.twitter-timeline{
+    text-decoration: none;
+    color: #f37e00;
+}
+.youtube-timeline{
+    text-decoration: none;
+    color: #f37e00;
+}
 footer{
     display: flex;
     justify-content: space-around;
@@ -104,4 +112,5 @@ footer{
 
 
 }
+
 
