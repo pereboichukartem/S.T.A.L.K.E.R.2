@@ -88,6 +88,9 @@ header{
     text-decoration: none;
     color: #f37e00;
 }
+.twitter-tweet{
+  margin: 20px;
+}
 .youtube-timeline{
     text-decoration: none;
     color: #f37e00;
@@ -108,19 +111,7 @@ footer{
     color: #E8E6D8;
     font-size: medium;
 }
-.footer_brands{
-    color: #9ACD32;
-    font-size: medium;
-}
-.a_footer{
-    text-decoration: none;
-    color: #9ACD32;
-}
-.a_footer:hover{
-    color: #bfff3f;
 
-
-}
 
 
 
