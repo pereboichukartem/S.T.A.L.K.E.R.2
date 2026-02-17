@@ -89,6 +89,12 @@ header{
     text-decoration: none;
     color: #f37e00;
 }
+.twitter-timeline:hover{
+    color: #ffb86b;
+}
+.youtube-timeline:hover{
+    color: #ffb86b;
+}
 footer{
     display: flex;
     justify-content: space-around;
@@ -112,5 +118,6 @@ footer{
 
 
 }
+
 
 
