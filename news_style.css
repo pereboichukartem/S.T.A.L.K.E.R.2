@@ -1,5 +1,5 @@
 body{
-  font-family: sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   margin: 0;
   margin-top: 80px;
 }
@@ -52,32 +52,30 @@ header{
     text-shadow: 0 0 10px #00ff00;
   }
 
-  .news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: start;
-  }
-
   .news-card {
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.15);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .news-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
-  }
-
-  .news-card h3 {
-    color: #00ff7f;
-    margin-bottom: 10px;
-  }
+  background-color: #111;
+  border: 1px solid #0f0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  transition: transform 0.3s;
+}
+.news-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+.news-card h3 {
+  color: #00ff88;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px #00ff88;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
 
   iframe {
     border-radius: 10px;
@@ -102,5 +100,6 @@ footer{
 }
 .a_footer:hover{
     color: #bfff3f;
+
 
 }
