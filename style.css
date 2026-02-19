@@ -75,6 +75,7 @@ header{
     display: flex;
     justify-content: flex-start;
     gap: 15px;
+    color: #E8E6D8;
 }
 .menu{
     display: flex;
