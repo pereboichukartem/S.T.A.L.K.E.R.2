@@ -114,7 +114,10 @@ width:90%;
 width:100%;
 height:auto;
 }
-
+iframe{
+  width: 100%;
+  heigth: auto;
+}
 }
 
 /* планшети */
@@ -131,7 +134,10 @@ header h2{
 .section h1{
 font-size:26px;
 }
-
+iframe{
+  width: 100%;
+  heigth: auto;
+}
 }
 
 /* телефони */
@@ -150,5 +156,9 @@ font-size:22px;
 
 .section p{
 font-size:14px;
+}
+iframe{
+  width: 100%;
+  heigth: auto;
 }
 }
