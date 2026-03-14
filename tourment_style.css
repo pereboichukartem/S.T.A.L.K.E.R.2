@@ -144,41 +144,6 @@ footer{
 
 
 
-/* ================= ADAPTIVE ================= */
-
-@media (max-width:1024px){
-
-.tourment-container{
-width:90%;
-}
-
-.tourment-container img{
-width:100%;
-height:auto;
-}
-
-}
-
-/* планшет */
-@media (max-width:768px){
-
-.tourment-container{
-width:95%;
-padding:10px;
-}
-
-.tourment-container h1{
-font-size:26px;
-}
-
-}
-
-/* телефон */
-@media (max-width:480px){
-
-.tourment-container h1{
-font-size:22px;
-}
 
 .tourment-container p{
 font-size:14px;
