@@ -4,8 +4,8 @@ body{
   margin-top: 80px;
 }
 img{
-max-width:100%;
-height:auto;
+  max-width:100%;
+  height:auto;
 }
 header{
     display: flex;
