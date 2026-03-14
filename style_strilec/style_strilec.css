@@ -106,14 +106,10 @@ iframe{
 @media (max-width:1024px){
 
 .section{
-
 width:90%;
 }
 
-.section img{
-width:100%;
-height:auto;
-}
+
 iframe{
   width: 100%;
   heigth: auto;
