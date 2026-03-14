@@ -111,6 +111,53 @@ footer{
 
 
 
+/* ================= ADAPTIVE ================= */
 
+@media (max-width:1024px){
+
+.news-container{
+width:90%;
+}
+
+.news-item img{
+width:100%;
+height:auto;
+}
+
+}
+
+/* планшети */
+@media (max-width:768px){
+header h2{
+  font-size: 15;
+}
+.news-container{
+width:95%;
+}
+
+.news-item{
+flex-direction:column;
+}
+
+.news-item h2{
+font-size:22px;
+}
+
+}
+
+/* телефони */
+@media (max-width:480px){
+header h2{
+  font-size: 15;
+}
+.news-item h2{
+font-size:18px;
+}
+
+.news-item p{
+font-size:14px;
+}
+
+}
 
 
