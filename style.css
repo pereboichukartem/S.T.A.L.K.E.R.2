@@ -208,7 +208,11 @@ font-size:20px;
 
 /* планшети */
 @media (max-width:768px){
-
+  
+header h2{
+  font-size: 5;
+}
+  
 .menu{
 width:95%;
 }
@@ -227,7 +231,9 @@ font-size:18px;
 
 /* телефони */
 @media (max-width:480px){
-
+header h2{
+  font-size: 5;
+}
 .logo{
 width:220px;
 }
