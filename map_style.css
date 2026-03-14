@@ -125,3 +125,44 @@ footer{
     color: #E8E6D8;
     font-size: medium;
 }
+
+/* ================= ADAPTIVE ================= */
+
+@media (max-width:1024px){
+
+.map-container{
+width:95%;
+}
+
+.map-container img{
+width:100%;
+height:auto;
+}
+
+}
+
+/* планшети */
+@media (max-width:768px){
+header h2{
+  font-size: 15;
+}
+.map-container{
+padding:10px;
+}
+
+.map-container h1{
+font-size:26px;
+}
+
+}
+
+/* телефони */
+@media (max-width:480px){
+header h2{
+  font-size: 15;
+}
+.map-container h1{
+font-size:22px;
+}
+
+}
