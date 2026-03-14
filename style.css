@@ -210,7 +210,7 @@ font-size:20px;
 @media (max-width:768px){
   
 header h2{
-  font-size: 5;
+  font-size: 15;
 }
   
 .menu{
@@ -232,7 +232,7 @@ font-size:18px;
 /* телефони */
 @media (max-width:480px){
 header h2{
-  font-size: 5;
+  font-size: 15;
 }
 .logo{
 width:220px;
