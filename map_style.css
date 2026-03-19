@@ -126,7 +126,27 @@ footer{
     color: #E8E6D8;
     font-size: medium;
 }
+/* Ховаємо чекбокс */
+.menu-toggle {
+    display: none;
+}
 
+/* Стилі для іконки бургера (за замовчуванням прихована) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
 /* ================= ADAPTIVE ================= */
 
 @media (max-width:1024px){
@@ -159,11 +179,44 @@ font-size:26px;
 
 /* телефони */
 @media (max-width:480px){
-header h2{
-  font-size: 15;
-}
-.container h1{
-font-size:22px;
-}
+    .hamburger {
+          display: flex; /* Показуємо бургер */
+      }
+
+    .menu {
+        display: none; /* Ховаємо звичайне меню */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #24211e;
+        padding: 20px;
+        gap: 10px;
+        border-bottom: 2px solid #4f3402;
+    }
+
+    /* Магія CSS: якщо чекбокс натиснутий, показуємо меню */
+    .menu-toggle:
+        checked ~ .menu {
+        display: flex;
+    }
+
+    /* Анімація бургера в "X" при натисканні (опціонально) */
+    .menu-toggle:checked + .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+    .menu-toggle:checked + .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle:checked + .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+    header h2{
+      font-size: 15;
+    }
+    .container h1{
+    font-size:22px;
+    }
 
 }
