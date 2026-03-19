@@ -170,9 +170,9 @@ font-size:22px;
 
 /* телефони */
 @media (max-width:480px){
-  .hamburger {
-        display: flex; /* Показуємо іконку на мобільних */
-    }
+    .hamburger {
+          display: flex; /* Показуємо іконку на мобільних */
+      }
 
     .menu {
         display: none; /* Ховаємо стандартне меню */
@@ -209,6 +209,7 @@ font-size:22px;
     }
     header h2{
       font-size: 15;
+      width: min-content;
     }
     .news-item h2{
     font-size:18px;
