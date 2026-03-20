@@ -178,10 +178,12 @@ font-size:26px;
 }
 
 /* телефони */
-@media (max-width:480px){
+@media (max-width: 480px) {
     .hamburger {
-          display: flex; /* Показуємо бургер */
-      }
+        display: flex; /* Показуємо бургер */
+        margin-right: 20px; /* Відступ від краю */
+        justify-content: center;
+    }
 
     .menu {
         display: none; /* Ховаємо звичайне меню */
@@ -191,32 +193,39 @@ font-size:26px;
         left: 0;
         width: 100%;
         background-color: #24211e;
-        padding: 20px;
+        padding: 20px 0; /* Рівномірні відступи */
         gap: 10px;
         border-bottom: 2px solid #4f3402;
+        text-align: center;
     }
 
-    /* Магія CSS: якщо чекбокс натиснутий, показуємо меню */
-    .menu-toggle:
-        checked ~ .menu {
+    /* Виправлено селектор: використовуємо ID з вашого HTML і прибираємо пробіл перед :checked */
+    #menu-toggle:checked ~ .menu {
         display: flex;
     }
 
-    /* Анімація бургера в "X" при натисканні (опціонально) */
-    .menu-toggle:checked + .hamburger span:nth-child(1) {
+    /* Анімація бургера */
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 6px);
     }
-    .menu-toggle:checked + .hamburger span:nth-child(2) {
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
         opacity: 0;
     }
-    .menu-toggle:checked + .hamburger span:nth-child(3) {
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -6px);
     }
-    header h2{
-      font-size: 15;
+
+    header h2 {
+        font-size: 14px; /* Трохи менше для вузьких екранів */
     }
-    .container h1{
-    font-size:22px;
+    
+    .container {
+        width: 100%;
+        padding: 0;
     }
 
-}
+    .map1 {
+        margin: 20px 10px; /* Зменшуємо відступи карток */
+        width: auto; /* Дозволяємо картці займати доступну ширину */
+    }
+} /* Кінцева дужка медіа-запиту */
