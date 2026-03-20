@@ -167,6 +167,8 @@ iframe{
 @media (max-width: 480px) {
     .hamburger {
         display: flex;
+        margin-right: 20px;
+        justify-content: center;
     }
     .menu {
         display: none;
