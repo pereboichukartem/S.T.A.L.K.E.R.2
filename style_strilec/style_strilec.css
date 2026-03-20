@@ -128,50 +128,51 @@ iframe{
 }
 /* ================= ADAPTIVE ================= */
 
-@media (max-width:1024px){
-
-.section{
-width:90%;
+/* Планшети та великі екрани */
+@media (max-width: 1024px) {
+    .section {
+        margin: 20px auto; /* Центруємо секції */
+        width: 90%;
+    }
+    iframe {
+        width: 100%;
+        height: 450px; /* Задаємо фіксовану висоту або використовуйте aspect-ratio */
+    }
 }
 
-
-iframe{
-  width: 100%;
-  heigth: auto;
-}
-}
-
-/* планшети */
-@media (max-width:768px){
-header h2{
-  font-size: 15;
-}
-.section{
-  margin-left: 0;
-  margin-right: 0;
-  width:95%;
-}
-
-.section h1{
-font-size:26px;
-}
-iframe{
-  width: 100%;
-  heigth: auto;
-}
+/* Планшети (вертикальні) */
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 15px; /* Додано px */
+    }
+    .section {
+        margin: 10px auto;
+        width: 95%;
+    }
+    .wrap1 {
+        flex-direction: column; /* Текст і фото стають один під одним */
+        text-align: center;
+    }
+    .s3 {
+        float: none; /* Відміняємо обтікання */
+        margin: 0 auto;
+        width: 80%; /* Фото стає більшим на малих екранах */
+    }
+    iframe {
+        height: 350px;
+    }
 }
 
-/* телефони */
-@media (max-width:480px){
-  .hamburger {
-          display: flex; /* Показуємо іконку на мобільних */
-      }
-
+/* Телефони */
+@media (max-width: 480px) {
+    .hamburger {
+        display: flex;
+    }
     .menu {
-        display: none; /* Ховаємо стандартне меню */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px; /* Висота твого хедеру */
+        top: 70px;
         left: 0;
         width: 100%;
         background-color: #24211e;
@@ -179,48 +180,30 @@ iframe{
         gap: 15px;
         border-bottom: 2px solid #4f3402;
     }
-
-    .menu .but {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    /* МАГІЯ: Якщо чекбокс натиснутий (checked), показуємо сусідній елемент .menu */
     .menu-checkbox:checked ~ .menu {
         display: flex;
     }
+    
+    header h2 {
+        font-size: 14px;
+        max-width: 150px; /* Щоб текст не наповзав на бургер */
+    }
+    
+    .section {
+        margin: 10px auto;
+        padding: 15px;
+    }
+    
+    .section h2 { /* Виправляємо заголовок (у вас був h1, але в секціях h2) */
+        font-size: 20px;
+    }
 
-    /* Анімація перетворення бургера на хрестик при натисканні */
-    .menu-checkbox:checked + .hamburger span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+    .section p {
+        font-size: 14px;
     }
-    .menu-checkbox:checked + .hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-    .menu-checkbox:checked + .hamburger span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    header h2{
-      font-size: 15;
-      width: min-content;
-    .s3{
-      width: 200px;
-    }
-      
-.section{
-  margin-left: 0;
-  margin-right: 0;
 
-}
-.section h1{
-font-size:22px;
-}
-
-.section p{
-font-size:14px;
-}
-iframe{
-  width: max-content;
-  heigth: auto;
-}
+    iframe {
+        width: 100%; /* Замість max-content для заповнення екрана */
+        height: 250px;
+    }
 }
