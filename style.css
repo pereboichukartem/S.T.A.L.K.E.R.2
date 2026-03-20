@@ -257,6 +257,8 @@ font-size:18px;
 @media (max-width:480px){
     .hamburger {
             display: flex; /* Показуємо іконку на мобільних */
+            margin-right: 20px;
+            justify-content: center;
         }
 
     .menu {
