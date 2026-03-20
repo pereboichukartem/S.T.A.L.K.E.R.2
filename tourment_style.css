@@ -152,38 +152,53 @@ font-size:14px;
 }
 
 /* Ховаємо чекбокс */
+/* Використовуйте ID, щоб точно приховати цей елемент */
 #menu-toggle {
     display: none;
+    position: absolute; /* Про всяк випадок прибираємо з потоку */
 }
 
-/* Стилі бургера */
+/* Стилі для іконки бургера (за замовчуванням прихована) */
 .hamburger {
-    display: none; /* Приховано на ПК */
+    display: none;
     flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
     cursor: pointer;
-    padding: 5px;
-    z-index: 1001;
+    gap: 5px;
+    z-index: 1000;
 }
 
 .hamburger span {
-    width: 100%;
+    width: 30px;
     height: 3px;
-    background-color: #E8E6D8;
+    background-color: white;
     border-radius: 2px;
     transition: 0.3s;
 }
+/* --- Адаптація для планшетів (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+    main {
+        gap: 50px; /* Зменшуємо величезний розрив */
+        padding: 20px;
+    }
+    .register-form {
+        width: 100%; /* Форма підлаштовується під екран */
+        max-width: 500px;
+    }
+}
 
-/* --- АДАПТИВ ДЛЯ ТЕЛЕФОНІВ --- */
+/* --- Адаптація для телефонів (max-width: 768px) --- */
 @media (max-width: 768px) {
+    header h2 {
+        font-size: 14px;
+        max-width: 150px;
+    }
+
     .hamburger {
         display: flex; /* Показуємо бургер */
     }
 
     .menu {
-        display: none; 
+        display: none; /* Ховаємо меню */
         flex-direction: column;
         position: absolute;
         top: 70px;
@@ -191,48 +206,45 @@ font-size:14px;
         width: 100%;
         background-color: #24211e;
         padding: 20px 0;
-        gap: 15px;
         border-bottom: 2px solid #4f3402;
-        z-index: 1000;
     }
 
-    /* Відкриття меню */
-    #menu-toggle:checked ~ .menu {
+    /* Логіка відкриття меню */
+    .menu-checkbox:checked ~ .menu {
         display: flex;
     }
 
-    /* Анімація Х */
-    #menu-toggle:checked + .hamburger span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-    #menu-toggle:checked + .hamburger span:nth-child(2) { opacity: 0; }
-    #menu-toggle:checked + .hamburger span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    /* Анімація бургера в Х */
+    .menu-checkbox:checked + .hamburger span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-checkbox:checked + .hamburger span:nth-child(2) { opacity: 0; }
+    .menu-checkbox:checked + .hamburger span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-    /* ПЕРЕБУДОВА КОНТЕНТУ */
+    /* Перебудова контенту: фото над формою */
     main {
-        flex-direction: column; /* Скіф над формою */
-        padding: 20px;
+        flex-direction: column;
+        align-items: center;
         gap: 30px;
     }
 
     .hero-img, .register-form {
-        width: 100%; /* Займають всю ширину екрана */
-        max-width: 400px; /* Але не розповзаються занадто сильно */
-        height: auto;
+        height: auto; /* Прибираємо фіксовану висоту 500px */
+        width: 95%;
         padding: 20px;
-        box-sizing: border-box;
     }
 
     .hero-img img {
-        width: 100%; /* Картинка підлаштовується під контейнер */
+        width: 100%;
         height: auto;
     }
 
     .btn-submit {
         width: 100%;
-        font-size: 24px; /* Зменшуємо величезний текст кнопки */
-        padding: 15px;
+        font-size: 24px; /* Зменшуємо гігантський шрифт кнопки */
     }
-
-    header h2 {
-        font-size: 14px; /* Щоб заголовок помістився поруч із бургером */
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 }
