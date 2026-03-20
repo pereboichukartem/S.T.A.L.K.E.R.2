@@ -150,3 +150,89 @@ font-size:14px;
 }
 
 }
+
+/* Ховаємо чекбокс */
+#menu-toggle {
+    display: none;
+}
+
+/* Стилі бургера */
+.hamburger {
+    display: none; /* Приховано на ПК */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #E8E6D8;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* --- АДАПТИВ ДЛЯ ТЕЛЕФОНІВ --- */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Показуємо бургер */
+    }
+
+    .menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #24211e;
+        padding: 20px 0;
+        gap: 15px;
+        border-bottom: 2px solid #4f3402;
+        z-index: 1000;
+    }
+
+    /* Відкриття меню */
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    /* Анімація Х */
+    #menu-toggle:checked + .hamburger span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    #menu-toggle:checked + .hamburger span:nth-child(2) { opacity: 0; }
+    #menu-toggle:checked + .hamburger span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* ПЕРЕБУДОВА КОНТЕНТУ */
+    main {
+        flex-direction: column; /* Скіф над формою */
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .hero-img, .register-form {
+        width: 100%; /* Займають всю ширину екрана */
+        max-width: 400px; /* Але не розповзаються занадто сильно */
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .hero-img img {
+        width: 100%; /* Картинка підлаштовується під контейнер */
+        height: auto;
+    }
+
+    .btn-submit {
+        width: 100%;
+        font-size: 24px; /* Зменшуємо величезний текст кнопки */
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 14px; /* Щоб заголовок помістився поруч із бургером */
+    }
+}
