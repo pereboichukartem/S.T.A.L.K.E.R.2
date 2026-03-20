@@ -101,6 +101,31 @@ iframe{
     display: flex;
     justify-self: center;
 }
+
+/* 1. Ховаємо технічний чекбокс */
+.menu-checkbox {
+    display: none;
+}
+
+/* 2. Стилізуємо іконку бургера (три лінії) */
+.hamburger {
+    display: none; /* Приховано на ПК */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #E8E6D8; /* Колір твого логотипу */
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
 /* ================= ADAPTIVE ================= */
 
 @media (max-width:1024px){
@@ -138,9 +163,50 @@ iframe{
 
 /* телефони */
 @media (max-width:480px){
-header h2{
-  font-size: 15;
-}
+  .hamburger {
+          display: flex; /* Показуємо іконку на мобільних */
+      }
+
+    .menu {
+        display: none; /* Ховаємо стандартне меню */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Висота твого хедеру */
+        left: 0;
+        width: 100%;
+        background-color: #24211e;
+        padding: 20px 0;
+        gap: 15px;
+        border-bottom: 2px solid #4f3402;
+    }
+
+    .menu .but {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* МАГІЯ: Якщо чекбокс натиснутий (checked), показуємо сусідній елемент .menu */
+    .menu-checkbox:checked ~ .menu {
+        display: flex;
+    }
+
+    /* Анімація перетворення бургера на хрестик при натисканні */
+    .menu-checkbox:checked + .hamburger span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-checkbox:checked + .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-checkbox:checked + .hamburger span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    header h2{
+      font-size: 15;
+      width: min-content;
+    img{
+      
+    }
+      
 .section{
   margin-left: 0;
   margin-right: 0;
