@@ -204,7 +204,7 @@ iframe{
       font-size: 15;
       width: min-content;
     img{
-      
+      width: 200px;
     }
       
 .section{
@@ -220,7 +220,7 @@ font-size:22px;
 font-size:14px;
 }
 iframe{
-  width: 100%;
+  width: max-content;
   heigth: auto;
 }
 }
