@@ -194,6 +194,8 @@ font-size:14px;
 
     .hamburger {
         display: flex; /* Показуємо бургер */
+        margin-right: 20px;
+        justify-content: center;
     }
 
     .menu {
